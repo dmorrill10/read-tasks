@@ -29,5 +29,12 @@ describe('Project', () => {
     expect(patient.tasks).toEqual({
       task1: new Task('Description for task1', 'task1')
     });
+    expect(patient.flat()).toEqual({
+      '/task1': new Task('Description for task1', '/task1'),
+      '/subproject1/task1': new Task(
+        'Description for subproject1 task1',
+        '/subproject1/task1'
+      )
+    });
   });
 });
