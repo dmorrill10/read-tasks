@@ -1,0 +1,17 @@
+{
+  "name": "read-tasks",
+  "main": "./lib/read-tasks",
+  "version": "0.0.1",
+  "description": "Read YAML tasks.",
+  "keywords": [],
+  "license": "MIT",
+  "dependencies": {
+    "jasmine": "^2.8.0",
+    "js-yaml": "^3.10.0"
+  },
+  "author": "Dustin Morrill",
+  "devDependencies": {
+    "babel-cli": "^6.26.0",
+    "babel-preset-node6": "^11.0.0"
+  }
+}
