@@ -24,4 +24,4 @@ Role2:
 Long *Markdown* styled note.
 ```
 
-into `TaskCompleter` object.
+into `Project` object.
