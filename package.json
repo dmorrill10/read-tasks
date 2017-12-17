@@ -5,6 +5,9 @@
   "description": "Read YAML tasks.",
   "keywords": [],
   "license": "MIT",
+  "scripts": {
+    "test": "jasmine"
+  },
   "dependencies": {
     "jasmine": "^2.8.0",
     "js-yaml": "^3.10.0"
