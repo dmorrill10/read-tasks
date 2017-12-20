@@ -79,7 +79,7 @@ describe('Project', () => {
         deadline: new Date('2017-10-02')
       }
     });
-    expect(patient.flatOrderedByDeadlineAndUrgency()).toEqual([
+    var tasks = [
       new Task({
           desc: 'asap_task_w_early_deadline',
           urgency: 'immediate',
@@ -136,6 +136,10 @@ describe('Project', () => {
         },
         '/unimportant_task'
       )
-    ]);
+    ];
+    expect(patient.flatOrderedByDeadlineAndUrgency()).toEqual(tasks);
+
+    tasks.reverse();
+    expect(patient.flatOrderedByDeadlineAndUrgency(true)).toEqual(tasks);
   });
 });
