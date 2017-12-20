@@ -137,9 +137,9 @@ describe('Project', () => {
         '/unimportant_task'
       )
     ];
-    expect(patient.flatOrderedByDeadlineAndUrgency()).toEqual(tasks);
+    expect(patient.flatOrderedByDeadlineAndUrgency(true)).toEqual(tasks);
 
     tasks.reverse();
-    expect(patient.flatOrderedByDeadlineAndUrgency(true)).toEqual(tasks);
+    expect(patient.flatOrderedByDeadlineAndUrgency()).toEqual(tasks);
   });
 });
